@@ -1,0 +1,25 @@
+<h1 class=" bg-info"> đây là trang giới thiệu </h1>
+<div>
+    <form ng-submit="createStudent()">
+        <label for="" class=" form-label"> Họ tên</label>
+        <input type="text" class=" form-control " ng-model="student.name">
+        <label for="" class=" form-label"> Năm sính </label>
+        <input type="text" class=" form-control " ng-model="student.year">
+        <label for="" class=" form-label"> chuyên ngành </label>
+        <input type="text" class=" form-control " ng-model="student.couse">
+        <button class=" bg-light"> Thêm thông tin </button>
+    </form>
+    <table class="table form-table">
+        <tr>
+            <th>Họ và tên</th>
+            <th>Năm sinh</th>
+            <th>chuyennganh </th>
+
+        </tr>
+        <tr ng-repear="item in nhanvien">
+            <td>{{item.ten}}</td>
+            <td>{{item.namsinh}}</td>
+            <td>{{item.chuyennganh}} </td>
+        </tr>
+    </table>
+</div>

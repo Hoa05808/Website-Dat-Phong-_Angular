@@ -1,0 +1,70 @@
+{
+  "students": [
+    {
+      "ten": "Dương thời huy",
+      "namSinh": "2005",
+      "chuyenNganh": "0909922732",
+      "id": "1"
+    },
+    {
+      "ten": "Nguyễn văn việt",
+      "namSinh": "2006",
+      "chuyenNganh": "0903409022",
+      "id": "2"
+    }
+  ],
+  "phone": [
+    {
+      "ID": "SP02",
+      "ten": "samsung note 10",
+      "hang": "samsung",
+      "gia": "1000",
+      "id": "1"
+    },
+    {
+      "id": "30eb",
+      "ID": "SP002",
+      "ten": "iphone 13",
+      "hang": "iphone",
+      "gia": "1000"
+    }
+  ],
+  "nhanvien": [
+    {
+      "ID": "NV01",
+      "ten": "Đặng ân hòa",
+      "sdt": "0327936667",
+      "email": "anhoa4251@gmail.com",
+      "chucvu": "Nhân viên",
+      "ngaysinh": "2020/09/20",
+      "id": "1"
+    },
+    {
+      "ID": "NV02",
+      "ten": "Dương thời huy",
+      "sdt": "0327939843",
+      "email": "huy4251@gmail.com",
+      "chucvu": "Nhân viên",
+      "ngaysinh": "2020/09/20",
+      "id": "2265"
+    },
+    {
+      "id": "c73c",
+      "ID": "nv3",
+      "ten": "hoa",
+      "sdt": "038853522",
+      "email": "sdfghjkl;",
+      "chucvu": "dfgghjkl",
+      "ngaysinh": "2000/09/29"
+    },
+    {
+      "id": "240a",
+      "ID": "nv04",
+      "ten": "hoang",
+      "sdt": 9405045435,
+      "email": "anhoa@gmail.com",
+      "chucvu": "1",
+      "ngaysinh": "2002/3"
+    }
+  ]
+}

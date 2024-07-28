@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="/AS1WEB307/libs/angular.min.js"></script>
+  <script src="/AS1WEB307/libs/angular.route.js"></script>
+  <link rel="stylesheet" href="as.css">
+  <title></title>
+</head>
+
+<body ng-app="appRoute">
+  <div class=" container   " style="width: 1300px; border: 2px;">
+    <div style="width: 1300px;">
+      <div class="row  " style="margin-left:5px ;width: 1300px;">
+        <div class=" col-1">
+          <img src="/AS1WEB307/img/logo-fpt-polytech.jpg" style="width: 100%;" alt="">
+        </div>
+        <div class=" col-9   ">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#!/trangchu">TRANG CHỦ </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" ng-click="setpagetitle('gioi thieu')" href="#!/gioithieu" text-bg-primary>GIỚI
+                      THIỆU </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" ng-click="myFunction(setpagetitle('phong'))" href="#!/phong">PHÒNG </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      DỊCH VỤ
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#!/nhahang">NHÀ HÀNG </a></li>
+                      <li><a class="dropdown-item" href="#!/matxa">DỊCH VỤ MÁT XA</a></li>
+                      <li><a class="dropdown-item" href="#!/phonggym">PHÒNG GYM</a></li>
+                    </ul>
+
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#!/loadData">DANH SÁCH </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">LIÊN HỆ </a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="col-2   ">
+          <a href="#!/them">
+            <button  type="button" class="btn btn-primary" >
+              Đăng ký phòng
+            </button>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/AS1WEB307/img/bn2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/AS1WEB307/img/bn5.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/AS1WEB307/img/bn6.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/AS1WEB307/img/bn7.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/AS1WEB307/img/bn8.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <main ng-view>
+    </main>
+    <div class=" row footer">
+
+      <div class="tienich">
+        <div id="fb-root"></div>
+        <div id="fb-root"></div>
+        <script src="https://uhchat.net/code.php?f=9a9d41"></script>
+        <script async defer crossorigin="anonymous"
+          src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v15.0" nonce="BWZaXSQF"></script>
+        <div class="fb-like" data-href="http://127.0.0.1:5500/BAO%20VE%20ASS2/TRANGCHU.HTML" data-width=""
+          data-layout="button_count" data-action="like" data-size="large" data-share="true"></div><br>
+        <script async defer crossorigin="anonymous"
+          src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v15.0" nonce="5FBxsS31"></script>
+        <div class="fb-comments" data-href="http://127.0.0.1:5500/BAO%20VE%20ASS2/TRANGCHU.HTML" data-width=""
+          data-numposts="5"></div>
+      </div>
+      <div class="trangcuoi" style="display: flex;">
+        <div>
+          <h2>THÔNG TIN KHÁCH SẠN </h2>
+          <h3>Địa chỉ: số 2 trịnh văn bô,phường xuân phương</h3>
+          <h3> <span class="fa fa-phone"></span> Số điện thoại: 032793667</h3>
+          <h3><span class="fa fa-envelope"></span> Email:dhoa05808@gmail.com</h3>
+          <h2> <span class="fafa-facebook-official fa fa-youtube-play 	fa fa-instagram "> </span> </h2>
+        </div>
+        <div>
+          <h3> Theo dõi chúng tôi qua </h3>
+          <ul>
+            <li>
+              <a href="https://m.facebook.com/groups/708706643126957/permalink/1291976054800010/?mibextid=qC1gEa"><img
+                  src="img/fb.png" style="width: 36px; height: 24px;" alt=""> Facbook </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=XfhghqXzu8Q"><img src="img/youtube.png"
+                  style="width: 36px; height: 24px;" alt="">Youtobe</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/reel/CxntzFBv7rB/?igsh=MzRlODBiNWFlZA=="><img src="img/instagam.jpg"
+                  style="width: 36px; height: 24px;" alt="">instagam </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <hr>
+    <h3>Mọi chi tiết liên hệ qua chúng tôi theo sđt: 0327936667</h3>
+  </div>
+
+  <script src="/AS1WEB307/controller/trangchucontroller.js"></script>
+  <script src="/AS1WEB307/controller/gioithieucontroller.js"></script>
+  <script src="/AS1WEB307/controller/matxacontroller.js"></script>
+  <script src="/AS1WEB307/controller/nhahangcontroller.js"></script>
+  <script src="/AS1WEB307/controller/phongcontroller.js"></script>
+  <script src="/AS1WEB307/controller/phonggymcontroller.js"></script>
+  <script src="/AS1WEB307/controller/ListStudentController.js"></script>
+  <script src="/AS1WEB307/controller/AddStudentController.js"></script>
+  <script src="/AS1WEB307/controller/DetailStudentController.js"></script>
+  <script src="/AS1WEB307/controller/EditStudentController.js"></script>
+  <script>
+    let myapp = angular.module("appRoute", ['ngRoute']);
+    myapp.config(function ($routeProvider) {
+      //  config :  khai báo trước khi định tuyến 
+      //  routeProvider : mặc định không được thay đổi 
+      $routeProvider
+        .when(
+          '/trangchu',
+          {
+            templateUrl: 'views/trangchu.html',
+            controller: trangchucontroller
+          }
+        )
+        .when(
+          '/gioithieu',
+          {
+            templateUrl: 'views/gioithieu.html',
+            controller: gioithieucontroller
+          }
+        )
+        .when(
+          '/phong',
+          {
+            templateUrl: 'views/phong.html',
+            controller: phongcontroller
+          }
+        )
+        .when(
+          '/matxa',
+          {
+            templateUrl: 'views/matxa.html',
+            controller: matxacontroller
+          }
+
+        )
+        .when(
+          '/nhahang',
+          {
+            templateUrl: 'views/nhahang.html',
+            controller: nhahangcontroller
+          }
+        )
+        .when(
+          '/phonggym',
+          {
+            templateUrl: 'views/phonggym.html',
+            controller: phonggymcontroller
+          }
+        )
+        .when(
+          '/loadData',
+          {
+            templateUrl: 'views/liststudent.html',
+            controller: ListStudentController
+          }
+        )
+        .when(
+          '/them',
+          {
+            templateUrl: 'views/addstudent.html',
+            controller: AddstudentController
+          }
+        )
+        .when(
+          '/detail-students/:id',
+          {
+            templateUrl: 'views/detailstudent.html',
+            controller: DetailStudentcontroller
+          }
+        )
+        .when(
+          '/edit-students/:id',
+          {
+            templateUrl: 'views/editstudent.html',
+            controller: EditStudentcontroller
+          }
+        )
+        //  khi click vào route không xác định
+        .otherwise(
+          {
+            redirectTo: '/trangchu'
+          }
+        )
+      
+    });
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+html{
+    background-size: 220% auto;
+    background-position: 30%;
+    /* background-image:url(img/bn6.jpg); */
+}
+
+.container{
+    width: 1500px ;
+    padding: 0 ;
+    margin: 0 auto;
+    height: auto;
+}
+.collapse>ul>li>a:hover{
+ color:crimson;
+}
